@@ -1,11 +1,8 @@
 const prompt = require("prompt-sync")({sigint:true})
 const cliente = require("./cruds/cliente.js")
 const corretora = require("./cruds/corretora.js")
+const imovel = require("./cruds/imovel.js")
+const corretor = require("./cruds/vendedor.js")
+const venda = require("./cruds/vendas.js")
 
-let corretoras = [{id:1, nome: "casa branca"}, {id:2, nome: "casa nova"}]
-let clientes = []
-
-// corretora.list(corretoras)
-
-
-module.exports = corretoras
+venda.add()
